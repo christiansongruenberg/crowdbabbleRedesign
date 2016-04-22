@@ -19,7 +19,7 @@ $app = new \Slim\App([
 $container = $app->getContainer();
 
 $container['view'] = function($container){
-   $view = new \Slim\Views\Twig(__DIR__ . '/../public/source/views',[
+   $view = new \Slim\Views\Twig(__DIR__ . '/../public/resources/views',[
        'cache' => false,
        ]);
 
@@ -33,8 +33,8 @@ $container['view'] = function($container){
     return $view;
 };
 
-$container['HomeController'] = function(){
-    return new Crowdbabble\Controllers\HomeController;
+$container['HomeController'] = function($container){
+    return new \Crowdbabble\Controllers\HomeController($container);
 };
 
 require '../src/routers/crowdbabble.router.php';

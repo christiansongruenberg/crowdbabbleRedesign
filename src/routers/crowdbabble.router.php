@@ -7,4 +7,4 @@
  */
 
 
-$app->get('/home', HomeController:Index);
+$app->get('/home', 'HomeController:index');

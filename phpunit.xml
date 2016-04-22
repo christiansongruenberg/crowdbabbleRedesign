@@ -1,0 +1,7 @@
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Crowdbabble Test Suite">
+            <directory> ./tests/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

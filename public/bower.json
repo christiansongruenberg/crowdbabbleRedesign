@@ -1,0 +1,13 @@
+{
+  "name": "Crowdbabble",
+  "version": "0.0.0",
+  "homepage": "https://github.com/christiansongruenberg/crowdbabbleRedesign",
+  "authors": [
+    "christiansongruenberg <christianson.gruenberg@gmail.com>"
+  ],
+  "description": "Crowdbabble",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.2.3"
+  }
+}
