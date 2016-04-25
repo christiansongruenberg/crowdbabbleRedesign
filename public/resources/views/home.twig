@@ -1,5 +1,24 @@
 {% extends 'templates/app.twig' %}
 
 {% block content %}
-Sup homie
+<div id="area"></div>
+    <script type="text/babel">
+        var HelloWorld = React.createClass({
+
+            getDefaultProps: function(){
+                return{}
+            },
+
+            render: function(){
+                return(
+                    <h1>Hello {this.props.name}</h1>
+                )
+            }
+        });
+
+        ReactDOM.render(
+            <HelloWorld name="Cara"/>,
+            document.getElementById('area')
+        );
+    </script>
 {% endblock %}

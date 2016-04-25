@@ -8,6 +8,8 @@
   "description": "Crowdbabble",
   "license": "MIT",
   "dependencies": {
-    "jquery": "~2.2.3"
+    "babel": "*",
+    "jquery": "~2.2.3",
+    "react": "~15.0.1"
   }
 }

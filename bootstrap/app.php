@@ -33,6 +33,14 @@ $container['view'] = function($container){
     return $view;
 };
 
+$container['logger'] = function($container){
+    $logger = new\Monolog\Logger('Crowdbabble_logger');
+    $file_handler = new \Monolog\Handler\StreamHandler("../logs/" . date("Y-d-m") . "-CBapp.log");
+    $logger->pushHandler($file_handler);
+    return $logger;
+};
+
+//instatiate the controllers on the container so it can be used in the routes
 $container['HomeController'] = function($container){
     return new \Crowdbabble\Controllers\HomeController($container);
 };
